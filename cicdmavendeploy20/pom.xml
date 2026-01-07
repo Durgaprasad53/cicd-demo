@@ -43,7 +43,7 @@
 						<connectedAppClientSecret>${password}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<businessGroupId>
-							${businessGroup}</businessGroupId>
+							469e9fdb-66a0-442a-bd41-668b21a64f7c</businessGroupId>
 						<environment>Dev</environment>
 						<target>Cloudhub-US-East-2</target>
 						<applicationName>mavencloudhub20</applicationName>
