@@ -30,8 +30,9 @@ jobs:
       #   run: mvn clean package -DmuleDeploy
  
       - name: Publish to Exchange
+        working-directory: cicdmavendeploy20
         run: |
-          mvn deploy \ --settings cicdmavendeploy20/.settings/settings.xml \ -DskipMunitTests \
+          mvn deploy \ --settings .settings/settings.xml \ -DskipMunitTests \
           -Danypoint.username="${{ secrets.USER }}" \
           -Danypoint.password="${{ secrets.PASS }}"
  
@@ -51,8 +52,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Deploy to dev
+        working-directory: cicdmavendeploy20
         run: |
-          mvn deploy \ --settings cicdmavendeploy20/.settings/settings.xml \ -DskipMunitTests \
+          mvn deploy \ --settings .settings/settings.xml \ -DskipMunitTests \
           -Danypoint.username="${{ secrets.USER }}" \
           -Danypoint.password="${{ secrets.PASS }}" \
           -Danypoint.businessGroup="${{ secrets.ANYPOINT_ORG_ID }}" \
