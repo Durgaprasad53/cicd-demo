@@ -47,7 +47,7 @@ jobs:
              -Dusername="${{secrets.USER}}"\
              -Dpassword="${{secrets.PASS}}"\
              -DbusinessGroupId="${{secrets.ANYPOINT_ORG_ID}}"\
-             -Dorg_id="${{secrets.ANYPOINT_ORG_ID}}"\
+             
          
       
       
