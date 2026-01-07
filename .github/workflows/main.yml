@@ -57,7 +57,6 @@ jobs:
           mvn deploy \ --settings .settings/settings.xml \ -DskipMunitTests \
           -Danypoint.username="${{ secrets.USER }}" \
           -Danypoint.password="${{ secrets.PASS }}" \
-          -Danypoint.businessGroup="${{ secrets.ANYPOINT_ORG_ID }}" \
           -Danypoint.platform.client_id="${{ secrets.ENV_CLIENT_ID }}" \
           -Danypoint.platform.client_secret="${{ secrets.ENV_CLIENT_SECRET }}" \
 
