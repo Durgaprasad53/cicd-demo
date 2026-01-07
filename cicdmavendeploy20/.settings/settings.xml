@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <settings>
   <servers>
-	   <server>
+	   <!--server>
 		  <id>anypoint-exchange-v3</id>
 		  <username>Durga-Jan</username>
 		  <password>Durga@53</password>
-	  </server>
+	  </server-->
 
   <!-- connected app's required scopes:
   https://help.salesforce.com/s/articleView?id=001119708&type=1
@@ -17,11 +17,11 @@
     <password>cf20b60a9c20494a9cc1c63d8baff3b2~?~D9B06c53cf09487A83aD0B08430dCdbd</password> 
   </server> -->
   <!-- Archima All Access -->
-   <!--server>   
+   <server>   
 <id>anypoint-exchange-v3</id> 
 <username>~~~Client~~~</username>
 <password>c60aada09ed34f2598dae48f26082b78~?~Eccc1Ddf6d02467495879aCA4f75D2DB</password> 
-</server-->
+</server>
 
      <!-- <server>   
     <id>anypoint-exchange-v3</id> 
