@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>03ceaaf7-b9d6-46e9-98bb-3aa12b4125a2</groupId>
+	<groupId${businessGroup}</groupId>
 	<artifactId>cicdmavendeploy20</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
@@ -35,9 +35,9 @@
 						<provider>MC</provider>
 						<muleVersion>4.9.11</muleVersion>
 						<server>anypoint-exchange-v3</server>
-						<username>Durga-Jan</username>
-						<password>Durga@53</password>
-						<businessGroupId>03ceaaf7-b9d6-46e9-98bb-3aa12b4125a2</businessGroupId>
+						<username>${username}</username>
+						<password>${password}</password>
+						<businessGroupId>${businessGroup}</businessGroupId>
 						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-2</target>
 						<applicationName>cicdmavendeploy20</applicationName>
@@ -59,7 +59,7 @@
 		<repository>
 			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/03ceaaf7-b9d6-46e9-98bb-3aa12b4125a2/maven</url>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/{businessGroup}/maven</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
