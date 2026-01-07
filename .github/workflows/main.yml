@@ -52,10 +52,12 @@ jobs:
             ${{ runner.os }}-maven-
       - name: Deploy to dev
         run: |
-          mvn deploy --settings .settings/settings.xml -DskipMunitTests -DmuleDeploy \
+          mvn deploy --settings .maven/settings.xml -DskipMunitTests -DmuleDeploy \
           -Danypoint.username="${{ secrets.USER }}" \
           -Danypoint.password="${{ secrets.PASS }}" \
           -Danypoint.businessGroup="${{ secrets.ANYPOINT_ORG_ID }}" \
+          -Danypoint.platform.client_id="${{ secrets.ENV_CLIENT_ID }}" \
+          -Danypoint.platform.client_secret="${{ secrets.ENV_CLIENT_SECRET }}" \
 
          
       
